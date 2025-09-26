@@ -9,21 +9,6 @@ import Foundation
 import Combine
 import SwiftUI
 
-// MARK: - Sort Options
-enum SortOption: String, CaseIterable {
-    case priority = "Priority"
-    case date = "Date"
-    case firm = "Firm"
-}
-
-// MARK: - View State
-enum ViewState {
-    case loading
-    case loaded([FoodRecallUIModel])
-    case error(APIError)
-    case empty
-}
-
 // MARK: - Food Recall List ViewModel
 class FoodRecallListViewModel: ObservableObject {
     // MARK: - Published Properties
